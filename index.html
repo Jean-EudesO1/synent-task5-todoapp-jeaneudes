@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma liste de tâches</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="app-header">
+            <h1>Ma liste de tâches</h1>
+            <p>Organise ta journée, une tâche à la fois.</p>
+        </header>
+
+        <form id="task-form" class="task-form">
+            <label for="task-input">Nouvelle tâche :</label>
+            <div class="input-group">
+                <input 
+                type="text"
+                id="task-input"
+                placeholder="Entrez une tâche"
+                maxlength="200"
+                autocomplete="off"
+                required>
+                <button type="submit">Ajouter</button>
+            </div>
+        </form>
+        <section class="tasks-section" aria-labelledby="tasks-title">
+            <h2 id="tasks-title">Mes tâches</h2>
+
+            <p id="empty-message">Aucune tâche pour le moment.</p>
+
+            <ul id="task-list"></ul>
+        </section>
+
+        
+        <p id="status-message" role="status"></p>
+
+            
+    </main>
+    
+</body>
+</html>
