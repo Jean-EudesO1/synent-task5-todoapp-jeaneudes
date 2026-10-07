@@ -145,3 +145,12 @@ button:focus-visible {
         flex-direction: column;
     }
 }
+
+.task-item:focus-within {
+    background-color: #f2f5f3;
+}
+
+.delete-button:focus-visible {
+    outline: 3px solid #a03228;
+    outline-offset: 3px;
+}

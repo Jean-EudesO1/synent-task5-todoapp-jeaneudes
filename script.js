@@ -57,6 +57,10 @@ function createTask(taskText, completed = false) {
     const deleteButton = document.createElement("button");
     deleteButton.type = "button";
     deleteButton.textContent = "Supprimer";
+    deleteButton.setAttribute(
+    "aria-label",
+    "Supprimer la tâche : " + taskText
+    );
     deleteButton.classList.add("delete-button");
 
     
